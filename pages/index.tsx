@@ -1,11 +1,19 @@
 import React from "react";
 import { useState } from 'react';
+import Link from 'next/link';
 
 function Index() {
   return (
     <div>
       <h1>My First Next.js Page</h1>
       <Contador />
+      <Link href="/sobre">
+        <a>Sobre</a> 
+      </Link>
+      <br/>
+      <Link href="/tempo">
+        <a>Tempo</a>
+      </Link>
     </div>
     
   );
