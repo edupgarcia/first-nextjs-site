@@ -5,7 +5,7 @@ function Tempo(props) {
   console.log('Passando pelo Frontend');
   
   const dynamicDate = new Date();
-  const dynamicDateString = dynamicDate.toGMTString();
+  const dynamicDateString = dynamicDate.toUTCString();
 
   return (
     <div>
@@ -27,7 +27,7 @@ export async function getStaticProps() {
   // await delay(5000);
 
   const staticDate = new Date();
-  const staticDateString = staticDate.toGMTString();
+  const staticDateString = staticDate.toUTCString();
 
   return {
     props: {
